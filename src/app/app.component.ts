@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import * as ethers from 'ethers';
+// recommended way as in https://github.com/ethers-io/ethers.js/issues/268#issuecomment-418159827
+import {ethers} from 'ethers';
 
 
 @Component({

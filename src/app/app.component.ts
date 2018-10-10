@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'small-test';
 
   constructor() {
-    const bn: ethers.BigNumber = ethers.utils.bigNumberify(1);
+    const bn: ethers.utils.BigNumber = ethers.utils.bigNumberify(1);
     console.log(`BigNumber=`, bn);
   }
 

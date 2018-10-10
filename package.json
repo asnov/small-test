@@ -20,10 +20,12 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "add": "^2.0.6",
     "core-js": "^2.5.4",
-    "ethers": "^4.0.0-beta.14",
-    "ethers2": "https://github.com/asnov/ethers.js#typescript",
+    "ethers": "4.0.4",
+    "ethers2": "https://github.com/asnov/ethers.js",
     "rxjs": "^6.0.0",
+    "yarn": "^1.10.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

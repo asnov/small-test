@@ -2411,7 +2411,7 @@ etag@~1.8.1:
 
 "ethers2@https://github.com/asnov/ethers.js":
   version "4.0.4"
-  resolved "https://github.com/asnov/ethers.js#9b118af304124e71ce7ddbe60549204b181a8888"
+  resolved "https://github.com/asnov/ethers.js#509e25c2807b6f0edd00d14f1155dde13856e691"
   dependencies:
     "@types/node" "^10.3.2"
     aes-js "3.0.0"

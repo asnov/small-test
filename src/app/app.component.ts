@@ -16,6 +16,26 @@ export class AppComponent {
   constructor() {
     const bn: ethers.utils.BigNumber = ethers.utils.bigNumberify(1);
     console.log(`BigNumber=`, bn);
+
+    this.testEthers();
+  }
+
+  testEthers() {
+    const ethProvider = new ethers.providers.EtherscanProvider();
+
+    // EtherscanProvider.perform() -> fetchJson() -> XMLHttpRequest()
+    const perform = ethProvider.perform('', {});
+    console.log(`perform=`, perform);
+
+    // EtherscanProvider.getHistory() -> fetchJson() -> XMLHttpRequest()
+    const transactions = ethProvider.getHistory('');
+    console.log(`transactions=`, transactions);
+
+    const rpcProvider = new ethers.providers.JsonRpcProvider();
+
+    // JsonRpcProvider.send() -> fetchJson() -> XMLHttpRequest()
+    const send = rpcProvider.send('', {});
+    console.log(`send=`, send);
   }
 
 }

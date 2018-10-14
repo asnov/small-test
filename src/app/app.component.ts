@@ -39,11 +39,12 @@ export class AppComponent {
         console.log(`transactions=`, transactions);
       });
 
-    const rpcProvider = new ethers.providers.JsonRpcProvider();
-    const hash = '0x2ddf6dd2ec23adf525dac59d7c9189b25b172d679aad951e59e232045f2c811f';
+    const rpcProvider = new ethers.providers.JsonRpcProvider(); // 'http://localhost:8545');
+    // const hash = '0x2ddf6dd2ec23adf525dac59d7c9189b25b172d679aad951e59e232045f2c811f';
 
     // JsonRpcProvider.send() -> fetchJson() -> XMLHttpRequest()
-    rpcProvider.send('debug_traceTransaction', [hash])
+    // rpcProvider.send('debug_traceTransaction', [hash])
+    rpcProvider.send('eth_signTransaction', [{}])
       .then(send => {
         console.log(`send=`, send);
       });

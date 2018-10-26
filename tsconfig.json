@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "etherTestLib": [
+        "dist/ether-test-lib"
+      ],
+      "etherTestLib/*": [
+        "dist/ether-test-lib/*"
+      ]
+    }
   }
 }

@@ -125,6 +125,41 @@
           }
         }
       }
+    },
+    "etherTestLib": {
+      "root": "projects/ether-test-lib",
+      "sourceRoot": "projects/ether-test-lib/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ether-test-lib/tsconfig.lib.json",
+            "project": "projects/ether-test-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ether-test-lib/src/test.ts",
+            "tsConfig": "projects/ether-test-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ether-test-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ether-test-lib/tsconfig.lib.json",
+              "projects/ether-test-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "small-test"

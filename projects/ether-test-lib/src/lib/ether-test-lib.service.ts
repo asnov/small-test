@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
-import * as ethers from 'ethers/ethers';
+
+// Doesn't work: ERROR in ../small-test/node_modules/xmlhttprequest/lib/XMLHttpRequest.js
+// Module not found: Error: Can't resolve 'child_process' in '/Users/alexnew/upWork/zoltu/small-test/node_modules/xmlhttprequest/lib'
+// import * as ethers from 'ethers/ethers';
 
 // recommended way as in https://github.com/ethers-io/ethers.js/issues/268#issuecomment-418159827
-// import { ethers } from 'ethers';    // Uncaught Error: Cannot find module 'tslib'
+import { ethers } from 'ethers';    // Uncaught Error: Cannot find module 'tslib'
 
 
 @Injectable({

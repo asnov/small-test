@@ -7,7 +7,6 @@
   },
   "module": "fesm5/ether-test-lib.js",
   "typings": "ether-test-lib.d.ts",
-  "metadata": "ether-test-lib.metadata.json",
   "sideEffects": false,
   "dependencies": {
     "tslib": "^1.9.0"

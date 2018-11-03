@@ -15,8 +15,7 @@ export class EtherTestLibService {
 
   constructor() {
     const bn: ethers.utils.BigNumber = ethers.utils.bigNumberify(1);
-    console.log(`BigNumber=`, bn);
-
+    console.log(`EtherTestLibService BigNumber=`, bn);
   }
 
   public testEthers() {
@@ -35,7 +34,7 @@ export class EtherTestLibService {
     // EtherscanProvider.getHistory() -> fetchJson() -> XMLHttpRequest()
     ethProvider.getHistory(address, startBlock, endBlock)
       .then(transactions => {
-        console.log(`transactions=`, transactions);
+        console.log(`EtherTestLibService transactions=`, transactions);
       });
 
     const rpcProvider = new ethers.providers.JsonRpcProvider(); // 'http://localhost:8545');
@@ -45,7 +44,7 @@ export class EtherTestLibService {
     // rpcProvider.send('debug_traceTransaction', [hash])
     rpcProvider.send('eth_signTransaction', [{}])
       .then(send => {
-        console.log(`send=`, send);
+        console.log(`EtherTestLibService send=`, send);
       });
   }
 
